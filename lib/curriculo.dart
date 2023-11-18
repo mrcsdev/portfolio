@@ -10,10 +10,6 @@ class ResumePage extends StatelessWidget {
         body: Ink(
           padding: EdgeInsets.all(5),
           decoration: BoxDecoration(
-              /* image: DecorationImage(
-                  alignment: Alignment.bottomCenter,
-                  image: AssetImage('assets/images/logo.png'),
-                ),*/
               gradient: LinearGradient(
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
