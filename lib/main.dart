@@ -24,17 +24,17 @@ class MyApp extends StatelessWidget {
 
 class HomeScreen extends StatelessWidget {
   final List<Map<String, dynamic>> languages = [
-    {'name': 'Flutter', 'photo': 'assets/flutter.jpeg'},
-    {'name': 'JS', 'photo': 'assets/js.png'},
-    {'name': 'PHP', 'photo': 'assets/php.png'},
-    {'name': 'Java', 'photo': 'assets/java.png'},
+    {'name': 'Flutter', 'photo': 'assets/apartamento.jpg'},
+    {'name': 'JS', 'photo': 'assets/casa.jpg'},
+    {'name': 'PHP', 'photo': 'assets/chacara.jpg'},
+    {'name': 'Java', 'photo': 'assets/sobrado.jpg'},
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Meu Portfólio'),
+        title: Text('Imobiliária Luxurious'),
       ),
       body: Center(
           child: Column(
@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
           AnimatedTextKit(
             animatedTexts: [
               TypewriterAnimatedText(
-                'Hello world!',
+                'Imobiliaria do Futuro!',
                 textStyle: const TextStyle(
                     fontSize: 32.0,
                     fontWeight: FontWeight.bold,
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16),
             child: Text(
-              'Bem-vindo ao meu portfólio Flutter! Aqui você pode encontrar informações sobre meus projetos e minha jornada no mundo do desenvolvimento.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie facilisis ligula, in imperdiet ipsum aliquet non. Nullam non tellus sit amet neque finibus gravida. Quisque non neque et lacus lacinia facilisis quis volutpat lectus. Suspendisse luctus quam accumsan, aliquet leo eu, vulputate eros. Phasellus sed augue et velit bibendum feugiat vel vitae mauris. Sed semper augue scelerisque sagittis sagittis. Morbi varius viverra viverra.',
+              'Aqui você pode encontrar informações sobre meus projetos da imobiliaria.Vamos divulgar alguns imóveis. Casas, apartamentos, sobrados.' ,
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -116,17 +116,17 @@ class HomeScreen extends StatelessWidget {
         child: ListView(padding: EdgeInsets.zero, children: <Widget>[
           UserAccountsDrawerHeader(
             accountEmail: Text(
-              'raqueliggom@gmail.com',
+              'Luxurious@gmail.com',
               style: TextStyle(fontSize: 18),
             ),
             accountName: Text(
-              'Raqueli Gonçalves',
+              'Imobiliária Luxurious',
               style: TextStyle(fontSize: 20),
             ),
             currentAccountPicture: Padding(
                 padding: EdgeInsets.only(bottom: 5),
                 child: CircleAvatar(
-                    backgroundImage: AssetImage('assets/photo.jpeg'))),
+                    backgroundImage: AssetImage('assets/logo.jpeg'))),
             decoration: const ShapeDecoration(
                 shape: UnderlineInputBorder(
                     borderSide: BorderSide(
@@ -181,7 +181,7 @@ class HomeScreen extends StatelessWidget {
               color: Colors.blueGrey,
             ),
             title: Text(
-              'Currículo',
+              'Contato',
               style: TextStyle(fontSize: 18),
             ),
             onTap: () {
